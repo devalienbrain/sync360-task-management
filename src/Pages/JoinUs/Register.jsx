@@ -67,14 +67,16 @@ const Register = () => {
   return (
     <>
       <ToastContainer></ToastContainer>{" "}
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col">
-          <h2 className=" text-2xl font-black">Please Register First</h2>
-          <div className="card w-full max-w-sm shadow-2xl bg-base-100 border border-green-800">
+      <div className="hero min-h-screen text-black">
+        <div className="hero-content">
+          <div className="card w-full max-w-xl shadow-2xl bg-base-100 p-10">
             <form
               onSubmit={handleRegister}
               className="flex flex-col gap-4 px-5 py-9"
             >
+              <label htmlFor="name" className="text-left">
+                Enter your name
+              </label>
               <input
                 type="text"
                 name="name"
@@ -82,13 +84,20 @@ const Register = () => {
                 className="input input-bordered"
                 required
               />
+              <label htmlFor="photo" className="text-left">
+                Photo URL
+              </label>
               <input
                 type="text"
                 required
                 name="photo"
                 placeholder="Photo URL"
+                defaultValue={`https://i.ibb.co/DkVQH6B/5906160.png`}
                 className="input input-bordered"
               />
+              <label htmlFor="email" className="text-left">
+                Enter email
+              </label>
               <input
                 type="email"
                 name="email"
@@ -96,6 +105,10 @@ const Register = () => {
                 className="input input-bordered"
                 required
               />
+              <label htmlFor="password" className="text-left">
+                Create password
+              </label>
+
               <div>
                 <input
                   type={showPassword ? "text" : "password"}

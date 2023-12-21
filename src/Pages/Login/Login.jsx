@@ -61,10 +61,8 @@ const Login = () => {
   return (
     <>
       <ToastContainer></ToastContainer>
-      <div className="hero min-h-screen bg-base-200 py-10 px-5">
-        <div className="hero-content flex-col">
-          <h2 className="text-2xl font-black">Please Login</h2>
-
+      <div className="hero min-h-screen py-10 px-5 text-black">
+        <div className="hero-content">
           <div className="card w-full shadow-2xl bg-base-100 py-9">
             <form
               onSubmit={handleLogin}
@@ -111,9 +109,7 @@ const Login = () => {
                 </span>
               </div>
               <div className="form-control mt-6">
-                <button className="btn hover:bg-red-700 bg-red-800 text-white">
-                  Login
-                </button>
+                <button className="btn border border-black">Login</button>
               </div>
             </form>
             {errorMessage && (
