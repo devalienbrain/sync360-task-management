@@ -4,10 +4,10 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Projects from "../Pages/Tasks/Tasks";
 import Skills from "../Pages/Login/Login";
-import Resume from "../Pages/Resume/Resume";
 import Contact from "../Pages/JoinUs/Register";
 import Register from "../Pages/JoinUs/Register";
 import Login from "../Pages/Login/Login";
+import Tasks from "../Pages/Tasks/Tasks";
 
 const Router = createBrowserRouter([
   {

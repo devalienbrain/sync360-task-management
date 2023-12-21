@@ -10,8 +10,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "bg-zinc-400/10 py-2 px-4 rounded-xl"
-              : "py-2 px-4"
+                ? "bg-zinc-400/10 py-2 px-4 rounded-xl"
+                : "py-2 px-4"
           }
         >
           <div className="flex justify-center items-center gap-2">
@@ -23,29 +23,16 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to="/resume"
+          to="/tasks"
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
               : isActive
-              ? "bg-zinc-400/25 py-2 px-4 rounded-lg"
-              : "py-2 px-4"
+                ? "bg-zinc-400/25 py-2 px-4 rounded-xl"
+                : "py-2 px-4"
           }
         >
-          Resume
-        </NavLink>
-
-        <NavLink
-          to="/projects"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "bg-zinc-400/25 py-2 px-4 rounded-xl"
-              : "py-2 px-4"
-          }
-        >
-          Projects
+          Tasks
         </NavLink>
 
         <NavLink
@@ -54,8 +41,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "bg-zinc-400/25 py-2 px-4 rounded-lg"
-              : "py-2 px-4"
+                ? "bg-zinc-400/25 py-2 px-4 rounded-lg"
+                : "py-2 px-4"
           }
         >
           Login
@@ -67,8 +54,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "bg-zinc-400/25 py-2 px-4 rounded-lg"
-              : "py-2 px-4"
+                ? "bg-zinc-400/25 py-2 px-4 rounded-lg"
+                : "py-2 px-4"
           }
         >
           Join Us
