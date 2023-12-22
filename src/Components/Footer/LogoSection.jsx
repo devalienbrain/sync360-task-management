@@ -11,7 +11,7 @@ function LogosSection() {
     <section className="container mx-auto">
       <div className="flex flex-col gap-7">
         <div className="flex justify-around align-middle items-center gap-2 md:gap-5 lg:gap-16">
-          <span className="text-zinc-200/50">Languages and tools</span>
+          <span className="text-zinc-200/50">Technologies</span>
           <Logo logoSrc={react} alt={react} />
           <Logo logoSrc={tailwind} alt={tailwind} />
           <Logo logoSrc={js} alt={js} />

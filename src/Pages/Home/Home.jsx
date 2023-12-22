@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "./Banner";
+import BenifittedUsers from "./BenifittedUsers/BenifittedUsers";
 
 const Home = () => {
   return (
@@ -8,6 +9,9 @@ const Home = () => {
         <title>Sync360 | Home</title>
       </Helmet>
       <Banner></Banner>
+      <div>
+        <BenifittedUsers></BenifittedUsers>
+      </div>
     </div>
   );
 };
