@@ -24,7 +24,7 @@ const Navbar = () => {
         >
           <div className="flex justify-center items-center gap-2">
             <img
-              src="../../../public/Resources/logo.jpg"
+              src="/Resources/logo.jpg"
               alt="logo"
               className="w-6 h-6 rounded-full"
             />

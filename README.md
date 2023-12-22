@@ -13,4 +13,5 @@ Features of this to do project:
 - Vercel deploy on server
 - Used Axios
 - Dynamic Routes
-- User friendly 
+- User friendly ui/ux
+  -Responsive for mobile, tablet and pc

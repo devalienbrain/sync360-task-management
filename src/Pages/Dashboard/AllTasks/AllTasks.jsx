@@ -57,7 +57,7 @@ const AllTasks = () => {
   return (
     <div>
       <Helmet>
-        <title>Dashboard | Your Tasks</title>
+        <title>Sync360 | Dashboard</title>
       </Helmet>
       <div className="flex flex-col justify-center items-center p-10">
         <div>
