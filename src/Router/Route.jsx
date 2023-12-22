@@ -10,6 +10,7 @@ import Dashboard from "../Layout/DashboardLayout";
 import AllTasks from "../Pages/Dashboard/AllTasks/AllTasks";
 import CreateTask from "../Pages/Dashboard/CreateTask";
 import TaskDragDrop from "../Pages/Dashboard/AllTasks/TaskDragDrop";
+import EditTask from "../Pages/Dashboard/EditATask";
 
 const Router = createBrowserRouter([
   {
@@ -58,6 +59,12 @@ const Router = createBrowserRouter([
       {
         path: "createATask",
         element: <CreateTask></CreateTask>,
+      },
+      {
+        path: "editATask/:id",
+        element: <EditTask></EditTask>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/allTasks/${params.id}`),
       },
     ],
   },

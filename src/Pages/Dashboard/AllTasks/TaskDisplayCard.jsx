@@ -1,6 +1,7 @@
-import { FaTrashAlt } from "react-icons/fa";
+import { FaTrashAlt, FaEdit } from "react-icons/fa";
 import Swal from "sweetalert2";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
+import { Link } from "react-router-dom";
 const TaskDisplayCard = ({ task }) => {
   const { _id, title, description, deadline, priority } = task || {};
   const axiosPublic = useAxiosPublic();
@@ -27,7 +28,6 @@ const TaskDisplayCard = ({ task }) => {
       }
     });
   };
-
   return (
     <div className="card text-sm border border-zinc-900/25 shadow-xl p-3">
       <div className="flex justify-center items-center gap-0">
@@ -50,12 +50,19 @@ const TaskDisplayCard = ({ task }) => {
         <p className="font-bold bg-gradient-to-r from-pink-500 via-red-500 to-red-900 bg-clip-text text-transparent">
           Task Deadline: {deadline}
         </p>
-        <button
-          onClick={() => handleDeleteTask(_id)}
-          className="btn btn-ghost btn-lg"
-        >
-          <FaTrashAlt className="text-red-600"></FaTrashAlt>
-        </button>
+        <div>
+          <button
+            onClick={() => handleDeleteTask(_id)}
+            className="btn btn-ghost btn-lg"
+          >
+            <FaTrashAlt className="text-red-600"></FaTrashAlt>
+          </button>
+          <Link to={`/dashboard/editATask/${_id}`}>
+            <button className="btn btn-ghost btn-lg">
+              <FaEdit className="text-blue-600"></FaEdit>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
