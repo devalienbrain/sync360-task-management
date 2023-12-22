@@ -2,14 +2,14 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
-import Projects from "../Pages/Tasks/Tasks";
-import Skills from "../Pages/Login/Login";
-import Contact from "../Pages/JoinUs/Register";
 import Register from "../Pages/JoinUs/Register";
 import Login from "../Pages/Login/Login";
-import Tasks from "../Pages/Tasks/Tasks";
+import Features from "../Pages/Features/Features";
 import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../Layout/DashboardLayout";
+import AllTasks from "../Pages/Dashboard/AllTasks/AllTasks";
+import CreateTask from "../Pages/Dashboard/CreateTask";
+import TaskDragDrop from "../Pages/Dashboard/AllTasks/TaskDragDrop";
 
 const Router = createBrowserRouter([
   {
@@ -22,8 +22,8 @@ const Router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/tasks",
-        element: <Tasks></Tasks>,
+        path: "/features",
+        element: <Features></Features>,
       },
       {
         path: "/login",
@@ -44,8 +44,20 @@ const Router = createBrowserRouter([
     ),
     children: [
       {
-        path: "dashboard",
-        element: <Dashboard></Dashboard>,
+        path: "/dashboard",
+        element: <AllTasks></AllTasks>,
+      },
+      {
+        path: "allTasks",
+        element: <AllTasks></AllTasks>,
+      },
+      {
+        path: "tasksDragDrop",
+        element: <TaskDragDrop></TaskDragDrop>,
+      },
+      {
+        path: "createATask",
+        element: <CreateTask></CreateTask>,
       },
     ],
   },

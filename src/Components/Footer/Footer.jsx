@@ -9,33 +9,33 @@ const Footer = () => {
         <div className="flex flex-col text-left">
           <h3 className="font-black text-xl">Contacts</h3>
           <p className="flex flex-col text-left text-sm text-zinc-300/70">
-            <small>Email: sabbirmurad.doict@gmail.com</small>
-            <small>Phone: +880 1893 070812</small>
+            <small>Email: sync360.todo@gmail.com</small>
+            <small>Phone: +22009308081</small>
             <small>Location: Dhaka, Bangladesh</small>
           </p>
         </div>
         <nav>
-          <header className="footer-title">Profiles</header>
+          <header className="footer-title">Pages</header>
           <a
-            href="https://github.com/devalienbrain"
+            href="https://www.youtube.com/"
             target="_blanc"
             className="link link-hover"
           >
-            Github
+            Youtube
           </a>
           <a
-            href="https://www.linkedin.com/in/md-sabbir-hassan-murad/"
+            href="https://twitter.com/?lang=en"
             target="_blanc"
             className="link link-hover"
           >
-            Linkedin
+            Twitter
           </a>
           <a
-            href="https://drive.google.com/file/d/1NaKFbDg-tRJdA_TmnNz697sOZQuxa0_8/view?usp=sharing"
+            href="https://www.facebook.com/"
             target="_blanc"
             className="link link-hover"
           >
-            Resume
+            Facebook
           </a>
         </nav>
       </footer>

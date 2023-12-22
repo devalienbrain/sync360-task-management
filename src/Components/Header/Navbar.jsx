@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
         </NavLink>
         <NavLink
-          to="/tasks"
+          to="/features"
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -44,7 +44,7 @@ const Navbar = () => {
               : "py-2 px-4"
           }
         >
-          Tasks
+          Features
         </NavLink>
       </div>
     </>
