@@ -31,10 +31,7 @@ const TaskDisplayCard = ({ task }) => {
   return (
     <div className="card text-sm border border-zinc-900/25 shadow-xl p-3">
       <div className="flex justify-center items-center gap-0">
-        <img
-          className="w-7 h-7 object-contain"
-          src="../../../../public/Resources/task.png"
-        />
+        <img className="w-7 h-7 object-contain" src="/Resources/task.png" />
         <h2 className="card-title bg-gradient-to-r from-blue-500 to-red-900 bg-clip-text text-transparent">
           {title}
         </h2>

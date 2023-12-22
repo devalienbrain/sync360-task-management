@@ -64,7 +64,10 @@ const Router = createBrowserRouter([
         path: "editATask/:id",
         element: <EditTask></EditTask>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/allTasks/${params.id}`),
+          fetch(
+            // `http://localhost:5000/allTasks/${params.id}`
+            `https://sync360-task-management-server.vercel.app/${params.id}`
+          ),
       },
     ],
   },

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import TaskList from "./TaskList";
 
 const BenifittedUsers = () => {
   const [tasks, setTasks] = useState([]);
@@ -32,7 +33,7 @@ const BenifittedUsers = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4">To-Do Task Management Users</h1>
+      <h1 className="text-3xl font-bold mb-4">User's To-Do Task Management</h1>
 
       <div className="mb-4">
         <input
@@ -47,7 +48,7 @@ const BenifittedUsers = () => {
         </button>
       </div>
 
-      {/* <TaskList tasks={tasks} removeTask={removeTask} /> */}
+      <TaskList tasks={tasks} removeTask={removeTask} />
 
       <div className="mb-4">
         <h2 className="text-xl font-bold mb-2">Who Can Benefit?</h2>

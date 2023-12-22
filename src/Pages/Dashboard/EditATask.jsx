@@ -37,7 +37,7 @@ const EditTask = () => {
         });
       }
     } catch (error) {
-      console.error("Error creating task:", error.message);
+      console.error("Error editing task:", error.message);
     }
   };
 

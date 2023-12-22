@@ -9,11 +9,7 @@ const Banner = () => {
     <div>
       <div className="hero min-h-screen my-10">
         <div className="hero-overlay bg-opacity-5">
-          <img
-            src="../../../public/Resources/bannerBg.png"
-            className="w-full"
-            alt="black"
-          />
+          <img src="/Resources/bannerBg.png" className="w-full" alt="black" />
         </div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md md:max-w-xl flex flex-col gap-7 justify-center items-center">
